@@ -27,7 +27,7 @@ public class GaiaDimension
 	{
 		DimensionManager.registerDimension(GAIA_ID, TYPE);
 	}
-
+	/*
 	@SubscribeEvent
 	public static void onSelectEntityToSpawn(LivingSpawnEvent.CheckSpawn event)
 	{
@@ -40,6 +40,7 @@ public class GaiaDimension
 			event.getWorld().spawnEntity(witch);
 		}
 	}
+	*/
 
 	private static boolean isInDim(World world)
 	{
