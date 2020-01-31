@@ -8,21 +8,14 @@
     "uvlock": true
   },
   "variants": {
-    "normal": [{}],
     "inventory":
     {
       "model": "leaves",
       "transform": "forge:default-block"
     },
-    "check_decay":
-    {
-        "true": { "model": "leaves" },
-        "false": { "model": "leaves" }
-    },
-    "decayable":
-    {
-      "true": { "model": "leaves" },
-      "false": { "model": "leaves" }
-    }
+    "check_decay=false,decayable=false": { "model": "leaves" },
+    "check_decay=false,decayable=true": { "model": "leaves" },
+    "check_decay=true,decayable=false": { "model": "leaves" },
+    "check_decay=true,decayable=true": { "model": "leaves" }
   }
 }
