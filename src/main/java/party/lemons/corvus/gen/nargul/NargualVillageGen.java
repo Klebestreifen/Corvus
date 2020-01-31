@@ -39,8 +39,6 @@ public class NargualVillageGen extends WorldGenerator
 			PlacementSettings settings = new PlacementSettings()
 					.setRotation((Rotation) RandomUtil.randomFromArray(random, Rotation.values()))
 					.setMirror((Mirror) RandomUtil.randomFromArray(random, Mirror.values()));
-
-			Template template = world.getSaveHandler().getStructureTemplateManager().getTemplate(world.getMinecraftServer(), BUILDINGS.get(random.nextInt(BUILDINGS.size())));
 			boolean canPlace = false;
 			int attempts = 0;
 
@@ -73,8 +71,6 @@ public class NargualVillageGen extends WorldGenerator
 				IBlockState state = world.getBlockState(pos);
 				if(state instanceof BlockBush)
 					pos = pos.down();
-
-				template.addBlocksToWorld(world, pos, settings);
 			}
 		}
 
@@ -89,7 +85,7 @@ public class NargualVillageGen extends WorldGenerator
 		VILLAGE_SPAWN_BIOMES.add(Biomes.MUTATED_JUNGLE);
 		VILLAGE_SPAWN_BIOMES.add(Biomes.MUTATED_JUNGLE_EDGE);
 
-		BUILDINGS.add(new ResourceLocation(Corvus.MODID, "jungle_house_1"));
-		BUILDINGS.add(new ResourceLocation(Corvus.MODID, "jungle_house_2"));
+		//BUILDINGS.add(new ResourceLocation(Corvus.MODID, "jungle_house_1"));
+		//BUILDINGS.add(new ResourceLocation(Corvus.MODID, "jungle_house_2"));
 	}
 }
