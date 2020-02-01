@@ -1,21 +1,9 @@
 {
-  "forge_marker": 1,
-  "defaults": {
-    "textures": {
-      "all": "corvus:blocks/frankinsence_leaves"
-    },
-    "model": "leaves",
-    "uvlock": true
-  },
   "variants": {
-    "inventory":
-    {
-      "model": "leaves",
-      "transform": "forge:default-block"
-    },
-    "check_decay=false,decayable=false": { "model": "leaves" },
-    "check_decay=false,decayable=true": { "model": "leaves" },
-    "check_decay=true,decayable=false": { "model": "leaves" },
-    "check_decay=true,decayable=true": { "model": "leaves" }
+    "normal": { "model": "corvus:frankinsence_leaves" },
+    "check_decay=false,decayable=false": { "model": "corvus:frankinsence_leaves" },
+    "check_decay=false,decayable=true": { "model": "corvus:frankinsence_leaves" },
+    "check_decay=true,decayable=false": { "model": "corvus:frankinsence_leaves" },
+    "check_decay=true,decayable=true": { "model": "corvus:frankinsence_leaves" }
   }
 }
