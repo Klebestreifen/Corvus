@@ -113,7 +113,7 @@ public class BlockCorvusLeaves extends BlockLeaves implements IItemModel, IShear
 	@Override
 	public NonNullList<ItemStack> onSheared(ItemStack item, net.minecraft.world.IBlockAccess world, BlockPos pos, int fortune)
 	{
-		return NonNullList.withSize(1, new ItemStack(this, 1, 1));
+		return NonNullList.withSize(1, new ItemStack(this, 1, 0));
 	}
 
 	@Override
